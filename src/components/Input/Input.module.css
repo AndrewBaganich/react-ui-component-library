@@ -1,19 +1,36 @@
 .inputContainer {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    display: inline-flex;
     align-items: center;
-    height: 150px;
 }
 
-.input{
-    width: 300px;
-    padding: 8px 12px;
+.input {
     border-radius: 8px;
     background: rgb(90, 90, 90);
     border: 2px solid rgba(255,255,255,.12);
     color: #fff;
-    font-size: 14px;
     box-shadow: 0 0 3px rgb(10, 10, 10);
+}
+
+.sm {
+    height: 32px;
+    width: 300px;
+    font-size: 14px;
+    padding: 0 64px 0 12px; 
+}
+
+.md {
+    height: 40px;
+    width: 400px;
+    font-size: 16px;
+    padding: 0 72px 0 12px;
+}
+
+.lg {
+    height: 48px;
+    width: 500px;
+    font-size: 18px;
+    padding: 0 80px 0 16px;
 }
 
 input::placeholder{
@@ -26,3 +43,24 @@ input::placeholder{
     box-shadow: 0 0 3px rgb(36, 36, 36);
 }
 
+.eyeButton {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #cacaca;
+}
+
+.clearButton {
+    position: absolute;
+    right: 44px;  
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #cacaca;
+}

@@ -1,14 +1,18 @@
 import './App.css'
 import { Input } from './components/Input/Input'
+import { useState } from 'react'
 
 function App() {
+    const [value, setValue] = useState("")
+
     return(
         <>
             <Input
                 placeholder="Type something..."
-                type="text"
+                type="password"
                 disabled={false}
-                value=""
+                value={value}
+                onChange={setValue}
                 defaultValue=""
                 clearable={false}
                 label=""
