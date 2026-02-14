@@ -1,5 +1,10 @@
 # React UI Library
 
+Front-end js test assessment
+Andrew Baganich
+
+---
+
 A small React UI component library built with:
 
 - React
@@ -12,7 +17,8 @@ A small React UI component library built with:
 ## Components
 
 ### Input
-- Controlled component
+- Controlled/uncontrolled component
+- Disable prop
 - Clearable
 - Password visibility toggle
 - Sizes: sm | md | lg
@@ -39,9 +45,9 @@ A small React UI component library built with:
 
 ### Toast
 - Bottom-right position
-- Auto dismiss
+- Auto dismiss (3000ms)
 - Variants (success / error / warning)
-- Fade animation
+- FadeIn/FadeOut animation 
 
 ## Success
 ![Success Toast](./screenshots/toast/Success.png)
@@ -66,4 +72,6 @@ A small React UI component library built with:
 ## Sidebar Opened
 ![Sidebar](./screenshots/sidebar/sidebar.png)
 
+
+Thank you, i learned a lot of things!
 ---
