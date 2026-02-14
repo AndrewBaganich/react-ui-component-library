@@ -1,0 +1,35 @@
+
+.menuButton{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    background: white;
+    border: none;
+    cursor: pointer;
+
+    padding: 8px;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.showToast{
+    position: fixed;
+    top:50%;
+    left: 50%;
+
+    background: none;
+    background-color: rgb(102, 102, 102);
+    outline: 1px solid rgb(185, 185, 185);
+    border: none;
+    border-radius: 7px;
+    color: white;
+
+    padding: 10px;
+    cursor: pointer;
+}
+
+.showToast:hover{
+    background-color: rgb(211, 211, 211);
+}

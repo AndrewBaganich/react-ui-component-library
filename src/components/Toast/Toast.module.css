@@ -1,0 +1,108 @@
+@keyframes fadeIn{
+    from{
+        opacity: 0.5;
+        transform: translateX(270px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to{
+        opacity: 0.5;
+        transform: translateX(270px);
+    }
+}
+
+.fadeIn {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.fadeOut {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+.toastContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    width: 340px;
+    padding: 16px;
+
+    font-family: 'Franklin Gothic Medium', sans-serif;
+
+    border-radius: 14px;
+    pointer-events: auto;
+}
+
+.toastIconBox {
+    display: flex;
+    align-items: center;
+}
+
+.toastIcon {
+    font-size: 20px;
+}
+
+.toastText {
+    flex: 1;
+}
+
+.toastText h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.toastText p {
+    margin: 4px 0 0 0;
+    font-size: 14px;
+}
+
+.toastClose {
+    margin-left: auto;
+}
+
+.toastClose button {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.toastClose button:hover {
+    opacity: 0.7;
+}
+
+.success {
+    background: rgba(125, 204, 149, 1);
+    color:  rgba(21, 71, 35, 0.815);
+}
+
+.error {
+    background: rgba(204, 130, 125, 1);
+    color:  rgba(71, 21, 21, 0.815);
+}
+
+.warning {
+    background: rgb(196, 145, 78);
+    color:  rgba(20, 20, 20, 0.774);
+}
