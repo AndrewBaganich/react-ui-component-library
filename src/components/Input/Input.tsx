@@ -1,4 +1,3 @@
-// import { useState } from 'react'
 import styles from './Input.module.css'
 import { useState } from 'react'
 import { Eye, EyeClosed } from 'lucide-react'
