@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import styles from "./Toast.module.css"
-import { Flag, X } from 'lucide-react'
+import { Flag, X, XCircle, AlertTriangle, type LucideIcon} from 'lucide-react'
 
 export type ToastProps = {
   duration?: number
@@ -33,9 +33,18 @@ const getContent = (variant: "success" | "error" | "warning"): ToastContent => {
         }
     };
 
+type ToastVariant = "success" | "error" | "warning";
+
+const IconsByVariants: Record<ToastVariant, LucideIcon> = {
+  success: Flag,
+  error: XCircle,
+  warning: AlertTriangle
+};   
+
 export default function Toast (props: ToastProps) {
     const variant = props.variant ?? "success"
     const content = getContent(variant);
+    const Icon = IconsByVariants[variant]
 
     const [isClosing, setIsClosing] = useState(false);
     const handleClose = () => setIsClosing(true);
@@ -67,7 +76,7 @@ export default function Toast (props: ToastProps) {
                 isClosing ? styles.fadeOut : styles.fadeIn
             }`}>
                 <div className={styles.toastIconBox}>
-                     <Flag className={styles.toastIcon} />
+                     <Icon className={styles.toastIcon} size={20} />
                 </div>
 
                  <div className={`${styles.toastText} ${styles[variant]}`}>
