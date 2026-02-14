@@ -28,11 +28,7 @@ A small React UI component library built with:
 - Nested submenu (accordion behavior)
 - Overlay click to close
 - Controlled open state
-
----
-
+  
 ## Run project
-
-```bash
-npm install
-npm run dev
+- npm install
+- npm run dev
