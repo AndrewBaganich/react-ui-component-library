@@ -64,3 +64,11 @@ input::placeholder{
     cursor: pointer;
     color: #cacaca;
 }
+
+.eyeButton:hover{
+    color: #f7f7f7;
+}
+
+.clearButton:hover{
+    color: #f7f7f7;
+}
