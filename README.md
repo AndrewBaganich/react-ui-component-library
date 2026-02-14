@@ -7,8 +7,6 @@ A small React UI component library built with:
 - CSS Modules
 - Storybook
 
----
-
 ## Components
 
 ### Input
